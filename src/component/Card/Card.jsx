@@ -5,20 +5,26 @@ import { Link } from 'react-router-dom';
 function Card(props) {
   let { id, name, image, description, link } = props;
 
-  description = description.substring(0, 200) + ' ...';
+  let classNames = styles.card;
+
+  if (description) {
+    description = description.substring(0, 200) + ' ...';
+  } else {
+    description = null;
+    classNames += ` ${styles.undescription}`;
+  }
+
 
   return (
-    <article key={id} className={styles.card}>
-      <header>
-        {image && <img src={image} alt={name} />}
-      </header>
+    <article key={id} className={classNames}>
+      <header>{image && <img src={image} alt={name} />}</header>
       <section>
         <h2>{name}</h2>
-        <p>{description}</p>
+        {description && <p>{description}</p>}
         <div className={styles.btn_group}>
           {link && (
             <Link className={styles.btn} to={link}>
-              Read more
+              {name}
             </Link>
           )}
         </div>
@@ -31,7 +37,7 @@ Card.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   image: PropTypes.string,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.string,
   link: PropTypes.string,
 };
 

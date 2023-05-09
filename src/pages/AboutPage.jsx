@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect } from 'preact/hooks';
 import { useDispatch } from 'react-redux';
 import { setSeo } from '../stores/SEOSlicer';
 

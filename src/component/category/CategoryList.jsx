@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'preact/hooks';
 import { getAllCategories } from '../../api';
 import { Progress } from '../loader';
 import { CardList } from '../card';
@@ -12,10 +12,7 @@ function CategoryList() {
         element.link = `/category/${element.strCategory}`;
       });
       setCategories(result);
-    
     });
-
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
