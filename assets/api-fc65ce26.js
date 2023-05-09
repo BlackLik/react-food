@@ -1,0 +1,1 @@
+const o="1",r=`https://www.themealdb.com/api/json/v1/${o}`,n=async t=>{try{return await(await fetch(`${r}/lookup.php?i=${t}`)).json()}catch(s){return s}},a=async()=>{try{return await(await fetch(`${r}/categories.php`)).json()}catch(t){return t}},c=async t=>{try{return await(await fetch(`${r}/filter.php?c=${t}`)).json()}catch(s){return s}};export{c as a,n as b,a as g};
