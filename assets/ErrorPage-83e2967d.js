@@ -1,0 +1,1 @@
+import{p as t,s as r,o as e,_ as s}from"./index-2394d0e1.js";import{u as i}from"./useDispatch-31be84a1.js";function a(){const o=i();return t(()=>{o(r({title:"404 Not found",description:"404 Not found"}))},[]),e(s,{children:"404 Not found"})}export{a as default};

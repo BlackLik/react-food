@@ -1,1 +1,0 @@
-import{p as e,s as i,o as t,_ as s}from"./index-54974eae.js";import{u as r}from"./useDispatch-9dfb2939.js";function p(){const o=r();return e(()=>{o(i({title:"About",description:"This is the about page"}))},[]),t(s,{children:t("h1",{children:"About"})})}export{p as default};

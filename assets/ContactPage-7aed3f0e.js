@@ -1,0 +1,1 @@
+import{p as c,s as e,o as t,_ as i}from"./index-2394d0e1.js";import{u as s}from"./useDispatch-31be84a1.js";function r(){const o=s();return c(()=>{o(e({title:"Contact",description:"This is the contact page"}))},[]),t(i,{children:t("h1",{children:"Contact"})})}export{r as default};
