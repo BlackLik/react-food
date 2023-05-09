@@ -9,7 +9,7 @@ const helmetContext = {};
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename='/react-food'>
         <HelmetProvider context={helmetContext}>
           <Header />
           <Main>

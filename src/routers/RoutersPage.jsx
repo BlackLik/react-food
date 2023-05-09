@@ -14,10 +14,10 @@ const RoutersPage = () => {
   return (
     <Suspense fallback={<Progress />}>
       <Routes>
-        <Route index element={<Home />} />
-        <Route path='/:id/' element={<Single />} />
+        <Route path='/' element={<Home />}></Route>
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/:id/' element={<Single />} />
         <Route path='/category/:name' element={<Category />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
